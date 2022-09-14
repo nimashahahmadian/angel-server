@@ -24,6 +24,10 @@ Future<Angel> createServer() async {
   var uuid = Uuid();
   print('server running');
   app.get('/', (req, res) {
+    req.parseBody();
+    var body = req.bodyAsMap;
+    res.headers['content-type'] = 'application/json';
+    res.headers['Accept-Charset'] = 'utf-8';
     res.write(jsonEncode({'you are at home': 'hello'}));
   });
   return app;
