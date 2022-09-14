@@ -1,0 +1,19 @@
+name: angel
+description: An absolute bare-bones web app.
+version: 1.0.0
+# homepage: https://www.example.com
+
+environment:
+  sdk: '>=2.18.0 <3.0.0'
+
+dependencies:
+  path: ^1.8.2
+  angel3_framework: ^7.0.0
+  mongo_dart: ^0.7.4+1
+  uuid: ^3.0.6
+
+dev_dependencies:
+  build_runner: ^2.2.0
+  build_web_compilers: ^3.2.5
+  lints: ^2.0.0
+  angel3_hot: ^7.0.0
